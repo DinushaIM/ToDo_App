@@ -54,3 +54,13 @@
   font-size: 18px;
   font-weight: 700;
 }
+
+.history{
+  color: #332cd2;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  padding: 60px 15px;
+  text-align: right;
+
+}
