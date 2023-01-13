@@ -1,0 +1,9 @@
+
+.return_history {
+  color: #332cd2;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  padding: 60px 15px;
+  text-align: right;
+}
