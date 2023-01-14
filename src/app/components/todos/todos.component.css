@@ -53,14 +53,67 @@
   padding: 10px 15px;
   font-size: 18px;
   font-weight: 700;
+  opacity: 0.8;
+  transition: 0.3s;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+.todo-submit:hover {
+  opacity: 1;
 }
 
 .history{
   color: #332cd2;
+  background-color: #ffffff;
+  border: none;
+  font-size: 16px;
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
-  padding: 60px 15px;
-  text-align: right;
+  margin-top: 60px;
+  cursor: pointer;
+  margin-left: 84.5%;
+  height: 20px;
+  transition-duration: 0.2s;
+}
 
+.history:hover {
+  color: #962d2d;
+}
+
+.delete{
+  background-color: #ffffff;
+  border: 2px solid #f10730;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.delete:hover {
+  background-color: #f10730;
+  color: white;
+}
+.note{
+  background-color: #ffffff;
+  border: 2px solid #0ba901;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.note:hover {
+  background-color: #0ba901;
+  color: white;
 }
