@@ -9,11 +9,29 @@
     />
     <input type="submit" value="Add Todo" class="todo-submit" />
   </form>
+
   <div *ngFor="let todo of todos; let i = index;" class="todo {{(todo.completed ? 'done' : '')}}" >
-    <div class="id">{{i}}</div>
-    <div class="content" (click)="toggleDone(i)">{{todo.content}}</div>
-    <button class="note" (click)="deteleTodo(i)">Note</button>
-    <button class="delete" (click)="deteleTodo(i)">Remove</button>
+    <tbody class="table-body">
+    <tr>
+      <td class="id"><div>{{i}}</div><td>
+      <td class="content"><div (click)="toggleDone(i)">{{todo.content}}</div></td>
+      <td>
+        <button class="note" (click)="deteleTodo(i)">Note</button>
+        <button class="delete" (click)="deteleTodo(i)">Remove</button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+      <form (submit)="addNoteTodo()">
+      <input
+        type="text"
+        name="noteInput"
+        placeholder="Enter note..."
+        class="note-input"
+        [(ngModel)]="noteInput"
+      />
+      <input type="submit" value="Add Note" class="note-submit" />
+    </form></td></tr></tbody>
   </div>
   <nav>
     <button class="history" routerLink="/history" routerLinkActive="active">Click here to view history >>></button>

@@ -9,16 +9,20 @@
   background-color: #EEE;
 }
 
+.todo:nth-child(odd){
+  background-color: #f8f6f6;
+}
+
 .todo:last-of-type{
   border-bottom: 0;
 }
 
 .todo .id{
-  flex: 1 1 50px;
+  width: 2%;
 }
 
 .todo .content{
-  flex: 1 1 100%;
+  width: 85%;
 }
 
 .todo.done .content{
@@ -28,12 +32,25 @@
 .todo-input{
   display: block;
   width: 100%;
-  padding: 10px 15px;
+  padding: 15px 15px;
   appearance: none;
   border: none;
   background-color: #F3F3F3;
   margin-top: 15px;
   font-size: 20px;
+  outline: none;
+  align-items: center;
+}
+
+.todo .note-input{
+  display: block;
+  width: 100%;
+  padding: 10px 700px;
+  appearance: none;
+  border: none;
+  background-color: #7cefb2;
+  margin-top: 15px;
+  font-size: 15px;
   outline: none;
 }
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Todo} from "../../models/Todo";
+import {NoteTodo} from "../../models/note-todo"
 
 @Component({
   selector: 'app-todos',
@@ -9,8 +10,10 @@ import {Todo} from "../../models/Todo";
 export class TodosComponent {
 
   todos: Todo[] | undefined;
+  notes: NoteTodo[] | undefined;
 
   inputTodo:string = "";
+  noteInput:string = "";
 
   constructor() {
   }
@@ -50,5 +53,15 @@ export class TodosComponent {
     }
 
     this.inputTodo = "";
+  }
+
+  addNoteTodo() {
+    if (this.noteInput !== "") {
+      this.notes?.push({
+        addNote: this.noteInput
+      });
+    }
+
+    this.noteInput = "";
   }
 }
